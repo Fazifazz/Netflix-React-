@@ -1,4 +1,5 @@
-import { API_KEY } from "./constants/Constants";
-export const original = `https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_networks=213`
-export const action = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=28`
-export const comedy = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=35`
+import { API_KEY,baseUrl } from "./constants/Constants";
+export const original = `${baseUrl}/movie/popular?api_key=${API_KEY}`
+export const action = `${baseUrl}/discover/movie?api_key=${API_KEY}&with_genres=28`
+export const comedy = `${baseUrl}/discover/movie?api_key=${API_KEY}&with_genres=35`
+export const Romance =`${baseUrl}/discover/movie?api_key=${API_KEY}&with_genres=10749`
